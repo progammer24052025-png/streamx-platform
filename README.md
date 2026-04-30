@@ -31,6 +31,8 @@ Static streaming-style website built with HTML, CSS, and vanilla JavaScript.
 - Open `Index.html` in a browser, or
 - Serve as static files via any local HTTP server.
 
+tesst our website here :  https://progammer24052025-png.github.io/streamx-platform/Index
+
 ## Quick QA Checklist
 
 - Home slider autoplay and pagination work.
