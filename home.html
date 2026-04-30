@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StreamX | Home</title>
+
+    <!-- External icon library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- ✏️ EDIT STYLE HERE: All site colors/fonts are in style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> StreamX
+        </a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#anime">Anime</a></li>
+            <li><a href="#coming">Featured</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+
+        <div class="search-wrapper" id="search-wrapper">
+            <i class='bx bx-search search-icon' id="search-icon"></i>
+            <input type="text" class="search-input" id="search-input" placeholder="Search movies, genre, year...">
+        </div>
+
+        <div class="profile-chip" id="profile-chip" title="Profile">
+            <span class="profile-chip-emoji" id="profile-chip-emoji">🙂</span>
+            <span class="profile-chip-name" id="profile-chip-name">Guest</span>
+        </div>
+        <a href="#" class="btn" id="login-btn">Sign In</a>
+    </header>
+
+    <div class="login-modal" id="login-modal">
+        <div class="login-container">
+            <div class="login-close" id="login-close">&times;</div>
+            <h2>Sign In</h2>
+
+            <form class="login-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-login">Sign In</button>
+            </form>
+
+            <p class="signup-link">Don't have an account? <a href="#" id="open-signup">Sign Up</a></p>
+        </div>
+    </div>
+
+    <div class="login-modal" id="signup-modal">
+        <div class="login-container">
+            <div class="login-close" id="signup-close">&times;</div>
+            <h2>Create Account</h2>
+
+            <form class="signup-form" novalidate>
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+
+                <button type="submit" class="btn btn-login">Create Account</button>
+            </form>
+
+            <p class="signup-link">Already have an account? <a href="#" id="back-to-signin">Sign In</a></p>
+        </div>
+    </div>
+
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+
+            <!-- === HERO SLIDE 1 === -->
+            <div class="swiper-slide container">
+                <img src="Banners/KGF-Chapter1-Banner.jpg.png" alt="KGF Chapter 1 Banner">
+                <div class="home-text">
+                    <span>Editor's Pick</span>
+                    <h1>KGF: <br> Chapter 1</h1>
+                    <p class="hero-description">A gritty rise-to-power story with scale, emotion, and unforgettable action.</p>
+                    <div class="hero-actions">
+                        <a class="btn" href="#movies">Explore Collection</a>
+                        <a class="btn btn-secondary" href="#coming">Watch Featured</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- === HERO SLIDE 2 === -->
+            <div class="swiper-slide container">
+                <img src="Banners/Master-Banner.jpg.png" alt="Master Banner">
+                <div class="home-text">
+                    <span>Trending Now</span>
+                    <h1>Master</h1>
+                    <p class="hero-description">A high-intensity faceoff between a flawed professor and a ruthless criminal mind.</p>
+                    <div class="hero-actions">
+                        <a class="btn" href="#movies">Browse Titles</a>
+                        <a class="btn btn-secondary" href="#newsletter">Get Updates</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- MOVIES SECTION (20 Items) -->
+    <section class="movies" id="movies">
+        <h2 class="heading">Latest Movies</h2>
+        <div class="movies-container">
+            <a href="https://youtu.be/6M191qGTZA4?si=wFU0_eS1gxGv3_8p" target="_blank" class="box" data-genre="comedy drama" data-year="2017">
+                <div class="box-img"><img src="Posters/Hindi Medium.jfif" alt="Hindi Medium"></div>
+                <h3>Hindi Medium</h3>
+            </a>
+            <a href="https://youtu.be/LKNHVDPKy7g?si=5myrk-eUjhJHkCxx" target="_blank" class="box" data-genre="comedy" data-year="2007">
+                <div class="box-img"><img src="Posters/Dhamaal.jfif" alt="Dhamaal"></div>
+                <h3>Dhamaal</h3>
+            </a>
+            <a href="https://youtu.be/0v4Hbf0nl6E?si=fNuNs6YpravR_5VG" target="_blank" class="box" data-genre="comedy" data-year="2017">
+                <div class="box-img"><img src="Posters/Golmaal Again.jfif" alt="Golmaal Again"></div>
+                <h3>Golmaal Again</h3>
+            </a>
+            <a href="https://youtu.be/gKizDojsdvs?si=d34iniVexo8qBOic" target="_blank" class="box" data-genre="action drama" data-year="2018">
+                <div class="box-img"><img src="Posters/KGF Chapter1.jfif" alt="KGF Chapter1"></div>
+                <h3>KGF Chapter 1</h3>
+            </a>
+            <a href="https://youtu.be/Xesy5kU29kk?si=7v5hUrTey6K93QQ0" target="_blank" class="box" data-genre="crime drama" data-year="2006">
+                <div class="box-img"><img src="Posters/Family Ek Deal.jfif" alt="Family: Ek Deal"></div>
+                <h3>Family: Ek Deal</h3>
+            </a>
+            <a href="https://youtu.be/61hp9V88Nh4?si=wETxUpSA3qdObQAK" target="_blank" class="box" data-genre="action thriller" data-year="2021">
+                <div class="box-img"><img src="Posters/Master.jfif" alt="Master"></div>
+                <h3>Master</h3>
+            </a>
+            <a href="https://youtu.be/JtRBRHIiDdg?si=_XaLoNdGOv04Ac4c" target="_blank" class="box" data-genre="action" data-year="2014">
+                <div class="box-img"><img src="Posters/Singham Returns.jfif" alt="Singham Returns"></div>
+                <h3>Singham Returns</h3>
+            </a>
+            <a href="https://youtu.be/vtq3j2wCndo?si=ff25ItJ_Z_eKoQYK" target="_blank" class="box" data-genre="comedy" data-year="2007">
+                <div class="box-img"><img src="Posters/Welcome.jfif" alt="Welcome"></div>
+                <h3>Welcome</h3>
+            </a>
+            <a href="https://youtu.be/ga1PMLM0Op4?si=RMXTzy8uovGDZwAz" target="_blank" class="box" data-genre="action thriller" data-year="2019">
+                <div class="box-img"><img src="Posters/URI.jfif" alt="URI"></div>
+                <h3>URI</h3>
+            </a>
+            <a href="https://youtu.be/Iy-6jmQCcrI?si=bdnCbEzl68SDUOcO" target="_blank" class="box" data-genre="romance fantasy" data-year="2017">
+                <div class="box-img"><img src="Posters/Raabta.jfif" alt="Raabta"></div>
+                <h3>Raabta</h3>
+            </a>
+            <a href="https://youtu.be/NpJ6lnbgi_s?si=4ToKQa7fFdmA_l79" target="_blank" class="box" data-genre="drama thriller" data-year="2021">
+                <div class="box-img"><img src="Posters/Check.jfif" alt="Check"></div>
+                <h3>Check</h3>
+            </a>
+            <a href="https://youtu.be/3Q1yTBHjwXc?si=0ikYvHdbJL9lL1yw" target="_blank" class="box" data-genre="comedy drama" data-year="2019">
+                <div class="box-img"><img src="Posters/Chhichhore.jfif" alt="Chhichore"></div>
+                <h3>Chhichore</h3>
+            </a>
+            <a href="https://youtu.be/-hke3ZFiSnc?si=P_ozVabJHViM4OY7" target="_blank" class="box" data-genre="biography drama" data-year="2016">
+                <div class="box-img"><img src="Posters/MS Dhoni.jfif" alt="M.S Dhoni"></div>
+                <h3>M.S Dhoni</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" target="_blank" class="box" data-genre="action" data-year="2016">
+                <div class="box-img"><img src="Posters/Sarrainodu.jfif" alt="Sarrainodu"></div>
+                <h3>Sarrainodu</h3>
+            </a>
+            <a href="https://youtu.be/EJMzac_LgRY?si=RC-ALOmMy-ekwtGx" target="_blank" class="box" data-genre="action comedy" data-year="2017">
+                <div class="box-img"><img src="Posters/DJ.jfif" alt="DJ"></div>
+                <h3>DJ</h3>
+            </a>
+            <a href="https://youtu.be/AgwszFUm_yQ?si=XVfgDh97-L6NJZts" target="_blank" class="box" data-genre="action" data-year="2014">
+                <div class="box-img"><img src="Posters/Yevadu.jfif" alt="Yevadu"></div>
+                <h3>Yevadu</h3>
+            </a>
+            <a href="https://youtu.be/mrAYeIbmSQY?si=reKSIrRDe1--3cLk" target="_blank" class="box" data-genre="action" data-year="2016">
+                <div class="box-img"><img src="Posters/Yevadu 2.jfif" alt="Yevadu 2"></div>
+                <h3>Yevadu 2</h3>
+            </a>
+            <a href="https://youtu.be/vOZWVCO5xQ4?si=W6yDWGxIczSzHjg2" target="_blank" class="box" data-genre="romance comedy" data-year="2016">
+                <div class="box-img"><img src="Posters/A. A....jfif" alt="A Aa"></div>
+                <h3>A Aa</h3>
+            </a>
+            <a href="https://youtu.be/pBP49rdzP4M?si=GbcAixs9YAQWgXkx" target="_blank" class="box" data-genre="action" data-year="2018">
+                <div class="box-img"><img src="Posters/Intelligent.jfif" alt="Intelligent"></div>
+                <h3>Intelligent</h3>
+            </a>
+            <a href="https://youtu.be/-qKjyNzMxmM?si=xt-V7sIhjSvXChqx" target="_blank" class="box" data-genre="action" data-year="2015">
+                <div class="box-img"><img src="Posters/Temper.jfif" alt="Temper"></div>
+                <h3>Temper</h3>
+            </a>
+        </div>
+        <div class="no-results" id="no-results" style="display:none;">
+            <i class='bx bx-search-alt-2'></i>
+            <p>No movies found matching your search.</p>
+        </div>
+    </section>
+
+    <!-- ANIME SECTION (10 Items) -->
+    <section class="movies" id="anime">
+        <h2 class="heading">Anime Hits</h2>
+        <div class="movies-container">
+            <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl2SdSro00Nvg38MQUf-5ZL8&si=hkXPaGELbBKls8WZ"
+                target="_blank" class="box" data-genre="action adventure anime" data-year="2011">
+                <div class="box-img"><img src="Posters/Hunter x Hunter.jfif" alt="Hunter x Hunter"></div>
+                <h3>Hunter x Hunter</h3>
+            </a>
+            <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl2XdtLhB9NG2Ch050jWFm9G&si=wbQpqB2DyewLO3J1"
+                target="_blank" class="box" data-genre="action comedy anime" data-year="2015">
+                <div class="box-img"><img src="Posters/One Punch Man.jfif" alt="One Punch Man"></div>
+                <h3>One Punch Man (S1 & S2)</h3>
+            </a>
+            <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl3oUZb_EHQopJ631it09D00&si=JxQQHujBNcWDD8mc"
+                target="_blank" class="box" data-genre="action comedy anime" data-year="2025">
+                <div class="box-img"><img src="Posters/One Punch Man 3.jfif" alt="One Punch Man Season 3"></div>
+                <h3>One Punch Man (S3)</h3>
+            </a>
+            <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl3RN7t6wesJqlUkSUN6FHKF&si=QzKlHFZLVVlY1tOE"
+                target="_blank" class="box" data-genre="fantasy drama anime" data-year="2016">
+                <div class="box-img"><img src="Posters/ReZERO.jfif" alt="Re:ZERO"></div>
+                <h3>Re:ZERO</h3>
+            </a>
+            <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl3572W1HJjIkZyW-0GGVUVq&si=J-CJNhJNisOwZ9CQ"
+                target="_blank" class="box" data-genre="action fantasy anime" data-year="2014">
+                <div class="box-img"><img src="Posters/The Seven Deadly Sins.jfif" alt="The Seven Deadly Sins"></div>
+                <h3>The Seven Deadly Sins</h3>
+            </a>
+            <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl1wGMYg5oB3uEns0CZNl6sI&si=tb4ywGjqmU_mU-zL"
+                target="_blank" class="box" data-genre="comedy action anime" data-year="2022">
+                <div class="box-img"><img src="Posters/SPY x Family.jfif" alt="SPY x Family"></div>
+                <h3>SPY x Family</h3>
+            </a>
+            <a href="https://youtu.be/FU9-3Fmoh7w?si=CDD1rGegiJ2KbaAo" target="_blank" class="box" data-genre="action drama anime" data-year="2013">
+                <div class="box-img"><img src="Posters/Attack on Titan(Season1).jfif" alt="Attack on Titan Season 1">
+                </div>
+                <h3>Attack on Titan (S1)</h3>
+            </a>
+            <a href="https://youtu.be/dNZV3K7orZk?si=ytH2nAaFQ18ZWUlc" target="_blank" class="box" data-genre="action drama anime" data-year="2017">
+                <div class="box-img"><img src="Posters/Attack on Titan(Season2).jfif" alt="Attack on Titan Season 2">
+                </div>
+                <h3>Attack on Titan (S2)</h3>
+            </a>
+            <a href="https://youtu.be/QbaFu1hEPtU?si=R904zqE2jYKOpzkL" target="_blank" class="box" data-genre="action drama anime" data-year="2018">
+                <div class="box-img"><img src="Posters/Attack on Titan(Season3).jfif" alt="Attack on Titan Season 3">
+                </div>
+                <h3>Attack on Titan (S3)</h3>
+            </a>
+            <a href="https://youtu.be/R5yc36m0sKk?si=p8Ce2_4T_R9SGnyG" target="_blank" class="box" data-genre="action fantasy anime" data-year="2021">
+                <div class="box-img"><img
+                        src="Posters/The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat.jfif"
+                        alt="The World's Finest Assassin"></div>
+                <h3>The World's Finest Assassin...</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="coming" id="coming">
+        <h2 class="heading">Featured</h2>
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <a href="https://youtu.be/gKizDojsdvs?si=d34iniVexo8qBOic" target="_blank">
+                        <div class="box-img"><img src="Posters/KGF Chapter1.jfif" alt="KGF"></div>
+                        <h3>KGF Chapter 1</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide box">
+                    <a href="https://youtu.be/61hp9V88Nh4?si=wETxUpSA3qdObQAK" target="_blank">
+                        <div class="box-img"><img src="Posters/Master.jfif" alt="Master"></div>
+                        <h3>Master</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide box">
+                    <a href="https://youtu.be/ga1PMLM0Op4?si=RMXTzy8uovGDZwAz" target="_blank">
+                        <div class="box-img"><img src="Posters/URI.jfif" alt="URI"></div>
+                        <h3>URI</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide box">
+                    <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl2SdSro00Nvg38MQUf-5ZL8&si=hkXPaGELbBKls8WZ"
+                        target="_blank">
+                        <div class="box-img"><img src="Posters/Hunter x Hunter.jfif" alt="Hunter x Hunter"></div>
+                        <h3>Hunter x Hunter</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide box">
+                    <a href="https://youtu.be/FU9-3Fmoh7w?si=CDD1rGegiJ2KbaAo" target="_blank">
+                        <div class="box-img"><img src="Posters/Attack on Titan(Season1).jfif"
+                                alt="Attack on Titan Season 1"></div>
+                        <h3>Attack on Titan (S1)</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p class="newsletter-subtitle">Weekly highlights, featured picks, and handpicked recommendations.</p>
+        <form action="" id="newsletter-form" novalidate>
+            <input type="email" class="email" id="newsletter-email" placeholder="Email Address" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    <!-- Subscribe Welcome Toast -->
+    <div class="subscribe-toast" id="subscribe-toast">
+        <div class="toast-content">
+            <div class="toast-icon"><i class='bx bxs-party'></i></div>
+            <h3>Welcome to StreamX! 🎉</h3>
+            <p id="toast-email-msg">Thank you for subscribing!</p>
+            <p class="toast-sub">You'll be the first to know about new releases & exclusives.</p>
+            <button class="btn toast-close-btn" id="toast-close">Got it!</button>
+        </div>
+    </div>
+
+    <!-- Movie Detail Modal -->
+    <div class="movie-modal" id="movie-modal">
+        <div class="movie-modal-content">
+            <div class="movie-modal-close" id="movie-modal-close">&times;</div>
+            <div class="movie-modal-body">
+                <div class="movie-modal-poster">
+                    <img id="modal-poster" src="" alt="Movie Poster">
+                </div>
+                <div class="movie-modal-info">
+                    <h2 id="modal-title"></h2>
+                    <div class="modal-meta">
+                        <span class="modal-year" id="modal-year"></span>
+                        <span class="modal-rating" id="modal-rating"><i class='bx bxs-star'></i> <span id="modal-rating-val"></span></span>
+                    </div>
+                    <div class="modal-genres" id="modal-genres"></div>
+                    <p class="modal-desc" id="modal-desc"></p>
+                    <a href="#" class="btn modal-watch-btn" id="modal-watch-btn">
+                        <i class='bx bx-play-circle'></i> Watch Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> StreamX
+        </a>
+
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>&#169; StreamX All Rights Reserved.</p>
+    </div>
+
+    <canvas id="celebration-canvas" aria-hidden="true"></canvas>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="data/catalog.js"></script>
+    <script src="data/movie-db.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

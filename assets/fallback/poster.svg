@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-label="Poster fallback">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#141419"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="#ff2c1f" stroke-width="14" opacity="0.75">
+    <rect x="150" y="260" width="300" height="380" rx="20"/>
+    <path d="M200 580 L275 500 L340 560 L410 470"/>
+  </g>
+  <text x="50%" y="78%" fill="#f3f3f3" font-family="Arial, sans-serif" font-size="44" text-anchor="middle">Poster Unavailable</text>
+</svg>
